@@ -1,0 +1,160 @@
+@keyframes expand {
+    from {
+        transform: translate(-50%, -50%) scale(0, 0);
+    }
+    to {
+        transform: translate(-50%, -50%) scale(1,1);
+
+    }
+}
+
+.projects {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+
+}
+
+.projects-container {
+    min-width: 400px;
+    width: 50vw;
+    min-height: 100vh;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.projects-container h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+}
+
+.project-tiles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project-img {
+    width: 13rem;
+    height: 13rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
+
+.project-img-wrapper {
+    position: relative;
+}
+
+.project-img-wrapper::after {
+    opacity: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: attr(data-tooltip);
+    left: 0;
+    top: 3rem;
+    position: absolute;
+    width: 13rem;
+    height: 13rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 1, 0.5);
+    transition: opacity 0.2s linear;
+}
+
+.project-img-wrapper:hover::after {
+    opacity: 1;
+}
+
+.opaque-wrapper {
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.project-desc {
+    z-index: 3;
+    position: fixed;
+    width: 20rem;
+    height: 80vh;
+    top: 50%;
+    left: 50%; 
+    background-color: white;
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-areas: 
+        "img img"
+        "title ."
+        "date ."
+        "desc desc"
+        "skills skills"
+        "github github";
+    animation: expand 0.5s linear 1 forwards;
+}
+
+.project-desc img {
+    grid-area: img;
+    width: 20rem;
+    height: 30vh;
+}
+
+.project-desc .title {
+    font-size: 2rem;
+    grid-area: title;
+}
+
+.project-desc .date {
+    margin: 0;
+    color: grey;
+    grid-area: date;
+}
+
+
+.project-desc p {
+    margin: 0;
+    grid-area: desc;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.project-desc a {
+    display: flex;
+    grid-area: github;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.project-desc a img {
+    padding-top: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.project-desc a img:hover {
+    filter: invert(62%) sepia(5%) saturate(61%) hue-rotate(349deg) brightness(95%) contrast(93%);
+}
+
+.project-desc .skills-container {
+    margin-top: 0.5rem;
+    grid-area: skills;
+}
+
+.skill {
+    border: slateblue solid 2px;
+    border-radius: 2rem;
+    padding: 0.1rem 0.2rem;
+    margin-right: 0.5rem;
+}
