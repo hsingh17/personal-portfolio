@@ -1,0 +1,47 @@
+#education-container {
+  display: flex;
+  width: clamp(300px, 50%, 1000px);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: var(--edge-curve);
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: var(--start-translate);
+  transition: var(--fade), var(--translate);
+  padding: 2rem 0px;
+  gap: 1rem;
+  background-color: var(--card-clr);
+}
+
+#education-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#education-info > * {
+  margin: 0.5rem;
+}
+
+#uni-name {
+  font-size: 2rem;
+  color: var(--primary-text-color);
+}
+
+#time-spent {
+  margin-top: -0.5rem;
+  color: var(--secondary-text-color);
+  opacity: 0.7;
+  font-size: 1rem;
+}
+
+#major {
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+}
+
+#ucd-logo {
+  width: 10rem;
+}

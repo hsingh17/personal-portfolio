@@ -1,0 +1,82 @@
+nav {
+  background-color: var(--nav-clr-no-stick);
+  top: 0;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: clamp(75px, 10vh, 100px);
+}
+
+nav > a {
+  color: #000000;
+  font-size: 1.5rem;
+  padding-right: 2rem;
+}
+
+nav > a:first-child {
+  position: absolute;
+  padding-right: 0;
+  left: calc(25px + 1vw);
+}
+
+#monogram {
+  height: 3.5rem;
+  width: 3.5rem;
+}
+
+#menu-button {
+  margin-right: 1.5rem;
+  padding: 3px 10px;
+  border: #000000 solid 2px;
+  border-radius: 4px;
+  font-size: 2rem;
+}
+
+#menu-button:hover {
+  cursor: pointer;
+}
+
+#menu {
+  background-color: var(--nav-clr-no-stick);
+  position: absolute;
+  left: 0;
+  top: clamp(75px, 10vh, 100px);
+  width: 100%;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: height ease-in-out 500ms;
+  overflow: hidden;
+}
+
+#menu a {
+  color: #000000;
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.sticky-nav #menu {
+  background-color: var(--nav-clr-stick);
+}
+
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: var(--nav-clr-stick);
+}
+
+.sticky-nav a {
+  color: #fcfaf9;
+}
+
+.sticky-nav #menu a {
+  color: #fcfaf9;
+}
+
+.sticky-nav #menu-button {
+  border: #ffffff solid 2px;
+}

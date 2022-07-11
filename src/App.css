@@ -1,20 +1,56 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+:root {
+  --fade: opacity 2s ease-in;
+  --translate: transform 1s linear;
+  --edge-curve: 2rem;
+  --shadow: rgba(132, 169, 140, 0.2) 0px 2px 50px;
+  --start-translate: translateY(-200px);
+  --nav-clr-no-stick: #DFF1FF;
+  --nav-clr-stick: #111A22;
+  --card-clr: #111A22;
+  --primary-text-color: #DFF1FF;
+  --secondary-text-color: #86FDC2;
+  --font: "Lato", sans-serif;
 }
 
 body {
-    margin: 0;
-    overflow-x: hidden;
-    scrollbar-width: thin;
-    background-blend-mode: darken;
-    font-family: 'Titillium Web', sans-serif;
+  position: relative;
+  margin: 0;
+  font-family: var(--font);
 }
 
-section:nth-child(odd) {
-    background-color: #333333;
+section {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10rem;
 }
 
-section:nth-child(even) {
-    background-color: #fcfaf9;
+section > h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  text-align: center;
 }
 
+a {
+  text-decoration: none;
+}

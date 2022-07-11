@@ -1,0 +1,107 @@
+#experience {
+  opacity: 0;
+  transition: var(--fade);
+}
+
+#experience-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job-grid {
+  border-radius: var(--edge-curve);
+  box-shadow: var(--shadow);
+  padding: 2rem 2rem;
+  opacity: 0;
+  transform: var(--start-translate);
+  transition: var(--fade), var(--translate);
+  background-color: var(--card-clr);
+}
+
+.job-grid.desktop {
+  width: clamp(40rem, 50%, 53rem);
+  display: grid;
+  grid-template-areas:
+    "img bar comp-date comp-date"
+    "img bar title title"
+    "img bar desc  desc";
+}
+
+#job-img {
+  width: 7rem;
+}
+
+#job-img.desktop {
+  grid-area: img;
+}
+
+#bar.desktop {
+  grid-area: bar;
+  background-color: var(--primary-text-color);
+  width: 0.3rem;
+  border-radius: 20px;
+  margin-left: 2rem;
+  margin-right: 3rem;
+}
+
+#job-company-date {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#job-company-date.desktop {
+  grid-area: comp-date;
+}
+
+#job-company {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--secondary-text-color);
+}
+
+#job-dates {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--primary-text-color);
+  opacity: 0.8;
+}
+
+#job-title {
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+}
+
+#job-title.desktop {
+  grid-area: title;
+}
+
+#job-desc {
+  margin-top: 2rem;
+  color: var(--primary-text-color);
+}
+
+#job-desc.desktop {
+  grid-area: desc;
+}
+
+.job-grid.mobile {
+  display: flex;
+  flex-direction: column;
+  width: clamp(240px, 80vw, 750px);
+}
+
+#job-company-date.mobile {
+  width: 100%;
+}
+
+#job-img.mobile {
+  align-self: center;
+}
+
+#job-title.mobile {
+  margin-top: 1rem;
+}

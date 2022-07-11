@@ -1,0 +1,40 @@
+#about-me-container {
+  width: clamp(16rem, 50vw, 45rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--edge-curve);
+  box-shadow: var(--shadow);
+  padding: 2rem 2rem;
+  padding-bottom: 5rem;
+  background-color: var(--card-clr);
+  opacity: 0;
+  transform: var(--start-translate);
+  transition: var(--fade), var(--translate);
+  color: var(--primary-text-color);
+  font-size: 1.2rem;
+}
+
+#skills-spinner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: clamp(16rem, 30vw, 28rem);
+  height: clamp(16rem, 30vw, 28rem);
+  margin-top: 3rem;
+  border-radius: 50%;
+}
+
+#skills-spinner > img {
+  width: 20%;
+  position: absolute;
+  transform-origin: center center;
+}
+
+#hacker-man {
+  font-size: clamp(5rem, 10vw, 8rem);
+}

@@ -1,0 +1,27 @@
+#contact {
+  height: clamp(12rem, 20vh, 15rem);
+}
+
+#contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: var(--edge-curve);
+  box-shadow: var(--shadow);
+  opacity: 0;
+  transform: var(--start-translate);
+  transition: var(--fade), var(--translate);
+  background-color: var(--card-clr);
+  padding: 2rem 2rem;
+}
+#contact-container > p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--primary-text-color);
+}
+
+#contact-container > code {
+  font-size: clamp(1rem, 5vw, 1.5rem);
+  color: var(--secondary-text-color);
+}
