@@ -70,10 +70,14 @@ nav > a:first-child {
   background-color: var(--nav-clr-stick);
 }
 
+.sticky-nav a {
+  color: #FCFAF9;
+}
+
 .sticky-nav #menu a {
-  color: #fcfaf9;
+  color: #FCFAF9;
 }
 
 .sticky-nav #menu-button {
-  border: #ffffff solid 2px;
+  border: #FFFFFF solid 2px;
 }
