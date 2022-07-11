@@ -56,6 +56,7 @@ nav > a:first-child {
   color: #000000;
   font-size: 1rem;
   margin-left: 1rem;
+  z-index: 1;
 }
 
 .sticky-nav #menu {
@@ -67,10 +68,6 @@ nav > a:first-child {
   top: 0;
   z-index: 1;
   background-color: var(--nav-clr-stick);
-}
-
-.sticky-nav a {
-  color: #fcfaf9;
 }
 
 .sticky-nav #menu a {
