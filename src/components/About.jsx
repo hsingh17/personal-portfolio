@@ -67,9 +67,8 @@ function About(props) {
       <div id="about-me-container" ref={containerRef}>
         <div className="hook">
           <p>
-            I am a recent Computer Science graduate from UC Davis. Currently, I
-            like exploring web development technologies. I still have so much to
-            learn, but I hope you enjoy my portfolio. Here are some technologies
+            I am a UC Davis Computer Science graduate, and I am currently a 
+            Junior Software Developer at Public Consulting Group. Here are some technologies
             I have experience in:
           </p>
         </div>

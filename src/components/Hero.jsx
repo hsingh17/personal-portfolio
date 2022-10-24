@@ -16,7 +16,7 @@ function Hero(props) {
   return (
     <section ref={containerRef} id="hero">
       <h1 id="name">Harjot Singh</h1>
-      <h2 id="title">Aspiring Software Engineer</h2>
+      <h2 id="title">Junior Software Developer</h2>
       <div id="socials">
         <a href="https://github.com/hsingh17">
           <img src={GithubSVG} alt="github" />

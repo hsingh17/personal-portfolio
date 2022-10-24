@@ -13,14 +13,14 @@ const ProjectsData = [
       },
 
       {
-        url: "https://hsingh17-cookbook.herokuapp.com/",
-        logo: require("../img/heroku.svg"),
-        alt: "heroku",
+        url: "https://cookbook-production-beb3.up.railway.app/",
+        logo: require("../img/railway.svg"),
+        alt: "railway",
       },
     ],
     date: "June 2022",
     image: require("../img/projects/cookbook_app.png"),
-    skills: ["React", "Node", "Express", "PostgreSQL", "Heroku", "Bootstrap"],
+    skills: ["React", "Node", "Express", "PostgreSQL", "Railway", "Bootstrap"],
   },
 
   {
@@ -28,7 +28,7 @@ const ProjectsData = [
     description: `Developed a basic Convolutional Neural Network (CNN) that classifies 
                             handwritten numbers. Designed a frontend where users can 
                             write numbers,and the CNN makes a prediction on what user wrote. 
-                            Hosted on Heroku`,
+                            Hosted with AWS on an EC2 instance.`,
     links: [
       {
         url: "https://github.com/hsingh17/Handwritten-Digit-Classifier",
@@ -37,9 +37,9 @@ const ProjectsData = [
       },
 
       {
-        url: "https://handwritten-digit-classifier.herokuapp.com/",
-        logo: require("../img/heroku.svg"),
-        alt: "heroku",
+        url: "http://204.236.145.239:3000/",
+        logo: require("../img/aws.svg"),
+        alt: "aws",
       },
     ],
     date: "August 2021",
@@ -52,7 +52,8 @@ const ProjectsData = [
       "Express",
       "HTML",
       "CSS",
-      "Heroku",
+      "AWS",
+      "EC2"
     ],
   },
 
@@ -61,7 +62,7 @@ const ProjectsData = [
     description: `Developed a recreation of Connect 4 in Javascript. 
                             Game features working local and online multiplayer. 
                             Implemented a simple opponent AI with the minimax algorithm. 
-                            Project is hosted on Heroku`,
+                            Project is hosted on Railway.`,
     links: [
       {
         url: "https://github.com/hsingh17/Connect4",
@@ -70,14 +71,14 @@ const ProjectsData = [
       },
 
       {
-        url: "https://hsingh17-connect4.herokuapp.com/",
-        logo: require("../img/heroku.svg"),
-        alt: "heroku",
+        url: "https://connect4-production.up.railway.app/",
+        logo: require("../img/railway.svg"),
+        alt: "railway",
       },
     ],
     date: "October 2020",
     image: require("../img/projects/connect4.png"),
-    skills: ["Javascript", "Node", "Express", "Socket.io", "Heroku"],
+    skills: ["Javascript", "Node", "Express", "Socket.io", "Railway"],
   },
 
   {
