@@ -1,47 +1,11 @@
 const Skills = [
   {
-    name: "C++",
-    img: require("../img/cpp.svg"),
-  },
-
-  {
-    name: "CSS",
-    img: require("../img/css.svg"),
-  },
-
-  {
     name: "React",
     img: require("../img/react.svg"),
   },
-
-  {
-    name: "Express",
-    img: require("../img/express.svg"),
-  },
-
-  {
-    name: "HTML",
-    img: require("../img/html.svg"),
-  },
-
-  {
-    name: "NodeJS",
-    img: require("../img/node.svg"),
-  },
-
-  {
-    name: "PostgreSQL",
-    img: require("../img/postgres.svg"),
-  },
-
   {
     name: "Python",
     img: require("../img/python.svg"),
-  },
-
-  {
-    name: "Powershell",
-    img: require("../img/powershell.svg"),
   },
 
   {
@@ -62,6 +26,14 @@ const Skills = [
   {
     name: "MySQL",
     img: require("../img/mysql.svg"),
+  },
+  {
+    name: "AWS",
+    img: require("../img/aws.svg"),
+  },
+    {
+    name: "Jenkins",
+    img: require("../img/jenkins.svg"),
   },
 ];
 

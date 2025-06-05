@@ -1,14 +1,11 @@
 const ExperienceData = [
   {
-    title: "Junior Software Developer",
+    title: "Software Engineer 3",
     company: "Public Consulting Group",
-    description: `This is where I currently am. I am a Junior Software Developer 
-                  on the DevOps team at PCG where we are currently working on
-                  providing technological solutions for our client, Department of
-                  Healthcare Services, for their PATH intiative. Currently, I am
-                  working with Java and Spring Batch to create a batch processing
-                  job to generate an ACH file that will automate disbursement of funds
-                  to grant reciepents.`,
+    description: `This is where I currently am. I primarily work with Spring Boot and 
+                  Java to create REST services. I also configure and deploy AWS resources 
+                  that are required by these backend services. For more information on what I
+                  do/have done, please check my resume.`,
     dateStart: "September 2022",
     dateEnd: "Current",
     img: require("../img/pcg.svg"),
