@@ -1,0 +1,25 @@
+#certifications-parent-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#certifications-container {
+  display: flex;
+}
+
+@media (width >= 500px) {
+  #certifications-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+    min-width: fit-content;
+    width: 55%;
+  }
+}
+
+@media (width < 500px) {
+  #certifications-container {
+    flex-direction: column;
+  }
+}

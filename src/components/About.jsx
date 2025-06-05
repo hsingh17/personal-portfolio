@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "../styles/About.css";
 import Skills from "../util/Skills";
 
@@ -67,9 +67,8 @@ function About(props) {
       <div id="about-me-container" ref={containerRef}>
         <div className="hook">
           <p>
-            I am a UC Davis Computer Science graduate, and I am currently a 
-            Junior Software Developer at Public Consulting Group. Here are some technologies
-            I have experience in:
+            Current Software Engineer at Public Consulting Group. Here are some
+            technologies I have experience in:
           </p>
         </div>
         {<SkillSpinner />}

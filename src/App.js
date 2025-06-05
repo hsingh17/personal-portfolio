@@ -1,13 +1,13 @@
-import Navbar from "./components/Navbar.jsx";
-import Background from "./components/Background.jsx";
-import Hero from "./components/Hero.jsx";
+import { useEffect, useState } from "react";
+import "./App.css";
 import About from "./components/About.jsx";
-import Projects from "./components/Projects.jsx";
+import Background from "./components/Background.jsx";
+import Certifications from "./components/Certifications.jsx";
+import Contact from "./components/Contact.jsx";
 import Education from "./components/Education.jsx";
 import Experience from "./components/Experience.jsx";
-import Contact from "./components/Contact.jsx";
-import "./App.css";
-import { useEffect, useState } from "react";
+import Hero from "./components/Hero.jsx";
+import Navbar from "./components/Navbar.jsx";
 
 function observerHandler(entries, observer) {
   entries.forEach((entry) => {
@@ -41,9 +41,9 @@ function App() {
       <Navbar height={height} width={width} />
       <Hero observerHandler={observerHandler} />
       <About observerHandler={observerHandler} />
-      <Projects observerHandler={observerHandler} />
-      <Education observerHandler={observerHandler} />
       <Experience width={width} observerHandler={observerHandler} />
+      <Certifications observerHandler={observerHandler} />
+      <Education observerHandler={observerHandler} />
       <Contact observerHandler={observerHandler} />
     </div>
   );
